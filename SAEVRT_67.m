@@ -47,7 +47,7 @@ for i = 1:length(X_te_cl_id)
     te_label = [te_label; gnd(idx)]; 
 end
 
-%%  SAERKT
+%%  SAEVRT
 % SAE initialize
 alpha = 10;
 bate = 100;
@@ -131,6 +131,7 @@ mean(accy1)
 mean(accy2)  
 std(accy1)   
 std(accy2)   
+
 
 
 
