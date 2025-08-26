@@ -1,4 +1,4 @@
-% Combining semantic autoencoder and relational knowledge transfer for zero-shot scene recognition
+% Enhancing Zero-Shot Scene Recognition through Semantic Autoencoders and Visual Relation Transfer
 clear
 clc
 options = [];
@@ -64,7 +64,7 @@ C = (1+alpha) * As * Xs';
 Ws = sylvester(A,B,C);
 Wt = Ws;
 
-% relational knowledge transfer
+% Visual relation transfer
 dis = EuclideanDistance(Xs',Xt');
 dis = ones(size(dis,1),size(dis,2)) ./ dis;
 %
@@ -131,5 +131,6 @@ mean(accy1)
 mean(accy2)  
 std(accy1)   
 std(accy2)   
+
 
 
